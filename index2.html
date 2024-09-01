@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta
+     name="viewport"
+     content="width=device-width, initial-scale=1.0">
+    <title> Media Queries </title>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    }
+
+    .page-heading{
+       text-align: center;
+       font-size: 60px;
+
+    }
+
+    .know-more{
+       position: fixed;
+       right: 10px;
+       bottom: 80px;
+       height: 80px;
+       background-color: #ff8080;
+       border-radius: 50%;
+       padding: 10px;
+       border: 2px solid #ff1a1a;
+       cursor: pointer;
+    }
+
+    .header-content{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       margin-top: 50px;
+       flex-wrap: wrap;
+       
+    }
+
+    .celebration{
+      width: 500px;
+    }
+
+    .content{
+      width: 600px;
+      font-size: 25px;
+    }
+
+    .navbar{
+      background-color: black;
+      display: flex;
+      align-self: center;
+      padding: 5px 40px;
+      color: white;
+    }
+
+    .flag-emoji{
+      font-size: 30px;
+    }
+
+    .menus{
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    }
+
+    .menu-item{
+     margin-right: 30px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+    }
+
+    .menu-item:hover{
+     color: orangered;
+    }
+
+    .menu-icon{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    }
+
+/* Mobile Device */
+    @media screen and (max-width: 500px){
+    .page-heading{
+            font-size: 40px;
+        }
+
+    .know-more{
+        height: 40px;
+        width: 40px;
+    }
+
+    .celebration{
+        width:350px;
+    }
+
+    .content{
+        font-size: 20px;
+    }
+
+    .secondary-content{
+        display: none;
+    }
+
+    .menu-text{
+        display: none;
+    }
+
+    .flag-emoji{
+        font-size: 18px;
+    }
+
+    .menus{
+        margin-left: 30px;
+    }
+
+    .menu-item{
+        margin-right: 10px;
+    }
+    }
+
+    /* Tablet Device */
+    @media screen and (min-width: 501px) and (max-width: 768px){
+    }
+
+    /* desktop Device */
+    @media screen and (min-width: 769px){
+    }
+
+</style>
+</head>
+<body>
+
+    <div class="navbar">
+      <span class="flag-emoji">🧡🤍💚 INDIA </span>
+
+      <div class="menus">
+        <span class="menu-item">
+        <img src="bank (1).png" class="menu-icon" alt="Government">
+        <span class="menu-text">
+             Government 
+        </span>
+        </span>
+
+        <span class="menu-item">
+        <img src="location (2).png" class="menu-icon" alt="Location">
+        <span class="menu-text">
+             Location
+        </span>  
+        </span>
+
+        <span class="menu-item">
+        <img src="masala-dosa (2).png" class="menu-icon" alt="food">
+        <span class="menu-text">
+             Food 
+        </span>
+        </span>
+
+        <span class="menu-item">
+        <img src="namaste.png" class="menu-icon" alt="culture"> 
+        <span class="menu-text">
+            Culture 
+        </span>
+        </span>
+
+        <span class="menu-item">
+        <img src="history-book (1).png" class="menu-icon" alt="History">
+        <span class="menu-text">
+            History 
+        </span>
+        </span>
+
+        <span class="menu-item">
+        <img src="project-management.png" class="menu-icon" alt="Technology"> 
+        <span class="menu-text">
+            Technology 
+        </span>
+        </span>
+
+        <span class="menu-item">
+        <img src="translate.png" class="menu-icon" alt="Language"> 
+        <span class="menu-text">
+            Language 
+        </span>
+        </span>
+
+        <span class="menu-item"> 
+        <img src="controller.png" class="menu-icon" alt="Games">
+        <span class="menu-text">
+            Games
+        </span> 
+        </span>
+
+      </div>
+    </div>
+
+    <h1 class="page-heading"> 
+        Happy Independance Day 🧡🤍💚
+    </h1>
+
+<div class="header-content">
+    <img src="celebrate.avif" class="celebration" alt="Independance Day celebration">
+
+    <div class="content">
+        <p>
+            India celebrate Independance Day on Auguest 15th every year. It is a national 
+            holiday In India commemorating the nation's Independance from the united kingdom
+            on auguest 15,1947.
+        </p>
+
+        <p class="secondary-content">
+            India attained independance following on independance movement noted for largely
+            nonvoilent resistance and civil disbedience led by the India National congress (INK).
+        </p>
+
+    </div>
+</div>
+
+<a href="https://en.wikipedia.org/wiki/India" targer="black">
+    <img src="click (1).png" class="know-more" alt="Click here to know more">
+</a> 
+</body>
+</html>
